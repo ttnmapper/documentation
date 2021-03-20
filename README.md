@@ -10,4 +10,4 @@ See [V2 integration](integration/ttn-integration-v2.md).
 See [V3 integration](integration/tts-integration-v3.md).
 
 ## Contribute to the software
-See [README](README.md)
+See [DEVELOPMENT](DEVELOPMENT.md)
