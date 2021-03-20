@@ -1,1 +1,6 @@
+title: TTN Mapper Documentation
+logo: /assets/img/logo.svg
+description: TTN Mapper is a tool to map the coverage of The Things Network.
+show_downloads: false
+google_analytics:
 theme: jekyll-theme-minimal
