@@ -6,8 +6,7 @@ The goal of TTN Mapper is to provide a map of the actual coverage of the TTN gat
 
 Go to https://ttnmapper.org for the global coverage map.
 
-| ❗ | The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow "Fix Base Url" below to fix this. |
-|---------------|:------------------------|
+> The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow "Fix Base Url" below to fix this.
 
 ## Prerequisites
 
