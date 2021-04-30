@@ -6,6 +6,9 @@ The goal of TTN Mapper is to provide a map of the actual coverage of the TTN gat
 
 Go to https://ttnmapper.org for the global coverage map.
 
+| ❗ | The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow "Fix Base Url" below to fix this. |
+|---------------|:------------------------|
+
 ## Prerequisites
 
 In order to use the TTN Mapper integration a LoRaWAN device with a GPS, capable of transmitting its GPS coordinates, is required. The minimal location information that needs to be sent by the device is its latitude and longitude. Preferably it should also send its altitude and HDOP values. If HDOP is not available, the end device should provide the accuracy of the GPS fix (in meters). As a last resort, if no accuracy can be provided, the satellite count can be sent. Devices that do not report a location are still used to determine of a gateway is online or not.
@@ -28,6 +31,10 @@ On the The Things Stack Console, open your application and then click on the *In
 * **E-mail address**: a valid email address. This email address will be used to associate all your data to you, and provides some guarantees on the quality of the data.
 
 Click on "Create TTN Mapper webhook".
+
+## Fix Base URL
+
+In the list of webhooks, click and open the newly added integration for TTN Mapper. Under Endpoint Settings, there is a Base URL. This value should read `https://integrations.ttnmapper.org/tts/v3`. If it's different, change it and then click save changes at the bottom of the page.
 
 ## Verify the integration is working correctly
 
