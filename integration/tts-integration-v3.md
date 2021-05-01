@@ -6,7 +6,7 @@ The goal of TTN Mapper is to provide a map of the actual coverage of the TTN gat
 
 Go to https://ttnmapper.org for the global coverage map.
 
-> The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow "Fix Base Url" below to fix this.
+> The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow [Fix Base Url](#fix-base-url) below to fix this.
 
 ## Prerequisites
 
@@ -27,7 +27,8 @@ If you are developing your own GPS enabled LoRa device please check the followin
 On the The Things Stack Console, open your application and then click on the *Integrations* menu on the left. Then click on Webhooks. Search for the TTN Mapper webhook template and click on it. In the configuration page for the integration fill in the following:
 
 * **Webhook ID**: a unique string describing this integration. This is mainly for you to make a distinction between (possibly) multiple integrations you have configured. The value does not have an influence on how the integration works.
-* **E-mail address**: a valid email address. This email address will be used to associate all your data to you, and provides some guarantees on the quality of the data.
+* **Email address**: a valid email address. This email address will be used to associate all your data to you, and provides some guarantees on the quality of the data.
+* **Experiment name (optional)**: You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 metre above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a ballon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
 
 Click on "Create TTN Mapper webhook".
 
@@ -39,12 +40,16 @@ In the list of webhooks, click and open the newly added integration for TTN Mapp
 
 In order to verify whether the integration has been configured correctly, go to the Live Data page for your device on the Console. Switch on your device and make sure you see data appearing there. Now go to the TTN Mapper website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section fill in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
 
+> Currently only mapping data without an *Experiment name* will show up. TTN Mapper's support for The Things Stack V3 is still a work in progress.
+
 For troubleshooting please post your question in the #ttn-mapper channel on Slack.
 
 ## Experiments
 
 While testing new hardware, or when flying a gps tracker on a balloon, it is recommended to map to an experiment so that the main map is not cluttered with invalid data. To log to an experiment, we need to add a header to the webhook integration which will tell TTN Mapper to log the data to an experiment.
 
-On the Console, go to your application, Integrations, Webhooks, and open the previously added TTN Mapper Integration. Under Addition Headers, click Add Header Entry. In the first block (where Authorization is displayed in grey) type in `TTNMAPPERORG-EXPERIMENT`. In the second block (where Bearer my-auth-token is displayed in grey) fill in a unique name to identify your experiment.
+When you create a new webhook from the template you can specify an experiment name, which will automatically add the `TTNMAPPERORG-EXPERIMENT` header to the webhook. If you didn't add an experiment name when you created the webhook but wish to start logging to an experiment, you can delete the webhook and create a new one and specify an experiment name.
+
+Alternatively you can manually add the header by going to your application, Integrations, Webhooks, and open the previously added TTN Mapper Integration. Under Addition Headers, click Add Header Entry. In the first block (where Authorization is displayed in grey) type in `TTNMAPPERORG-EXPERIMENT`. In the second block (where Bearer my-auth-token is displayed in grey) fill in a unique name to identify your experiment.
 
 To stop logging to an experiment, delete the `TTNMAPPERORG-EXPERIMENT` header entry.
