@@ -46,7 +46,16 @@ For troubleshooting please post your question in the #ttn-mapper channel on Slac
 
 ## Experiments
 
-While testing new hardware, or when flying a gps tracker on a balloon, it is recommended to map to an experiment so that the main map is not cluttered with invalid data. To log to an experiment, we need to add a header to the webhook integration which will tell TTN Mapper to log the data to an experiment.
+### When should I use an "experiment" to map my coverage
+
+An experiment is a way to keep unrealistic coverage measurements away from the main map. Experiments should be used when testing new hardware or coverage is mapped from aeroplanes, balloons or any similar unrealistic altitudes.
+
+In other words logging to the main map should only be done from roughly 0.5m-2m above ground level. "Ground level" should be interpreted as any place easily accessible by a human - or any place where an IoT device would commonly be installed. The top of a skyscraper is only acceptable if the skyscraper has a viewing deck that is publicly accessible. Man made hills and natural mountains are acceptable. The roof of a car or small delivery truck is fine. The roof of a bus or 14 wheeler truck is not as that is not a average acceptable height at which a sensor will be installed. The dashboard of a truck or bus is however roughly 2m above ground and therefore acceptable.
+
+
+### Enable or disable logging to an experiment
+
+To log to an experiment, we need to add a header to the webhook integration which will tell TTN Mapper to log the data to an experiment.
 
 When you create a new webhook from the template you can specify an experiment name, which will automatically add the `TTNMAPPERORG-EXPERIMENT` header to the webhook. If you didn't add an experiment name when you created the webhook but wish to start logging to an experiment, you can delete the webhook and create a new one and specify an experiment name.
 
