@@ -40,7 +40,7 @@ In the list of webhooks, click and open the newly added integration for TTN Mapp
 
 In order to verify whether the integration has been configured correctly, go to the Live Data page for your device on the Console. Switch on your device and make sure you see data appearing there. Now go to the TTN Mapper website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section fill in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
 
-> Currently only mapping data without an *Experiment name* will show up. TTN Mapper's support for The Things Stack V3 is still a work in progress.
+> TTN Mapper's support for The Things Stack V3 is still a work in progress and therefore not all maps will show the V3 mapping data. Using the per-device raw data map and csv is the most reliable way to make sure your data is accepted into the TTN Mapper database.
 
 For troubleshooting please post your question in the #ttn-mapper channel on Slack.
 
