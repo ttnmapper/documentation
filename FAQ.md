@@ -124,4 +124,4 @@ For details contact us.
 ## My question is not answered here
 
 * Ask your question in the #ttnmapper channel on the TTN Slack.
-* Send me a message to <info@ttnmapper.org>
+* Send a message to <info@ttnmapper.org>
