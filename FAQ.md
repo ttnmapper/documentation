@@ -40,20 +40,20 @@ For more info see the following articles:
 * <a href="https://github.com/ttnmapper/gps-node-examples">Other examples</a>
 
 
-## When should I use an "experiment" to map my coverage</h5>
+## When should I use an "experiment" to map my coverage
 An experiment is a way to keep unrealistic coverage measurements away from the main map. Experiments should be used when coverage is mapped from aeroplanes, balloons or any similar unrealistic altitudes.
 
 In other words logging to the main map should only be done from roughly 0.5m-2m above ground level. "Ground level" should be interpreted as any place easily accessible by a human - or any place where an IoT device would commonly be installed. The top of a skyscraper is only acceptable if the skyscraper has a viewing deck that is publicly accessible. Man made hills and natural mountains are acceptable. The roof of a car or small delivery truck is fine. The roof of a bus or 14 wheeler truck is not as that is not a average acceptable height at which a sensor will be installed. The dashboard of a truck or bus is however roughly 2m above ground and therefore acceptable.
 
 
-## Which spreading factor should I transmit on?</h5>
+## Which spreading factor should I transmit on?
 
 We recommend using SF7. This provides us with a map of "worst case" coverage. Due to the 1% duty cycle limit on transmissions, using the fastest spreading factor will maximize the number of measurements taken.
 
 From experimentation it has been seen that slower spreading factors (like SF12) does not perform well when the device is mobile. This is likely due to path fading from obstacles in the radio path, causing bursts of interference (erasures) which the forward error correction can not deal with. When you are doing measurements while standing still higher spreading factors (SF9-SF12) will work, but when mobile it's better to use SF7.
 
 
-## My results are not showing up on the map</h5>
+## My results are not showing up on the map
 
 New measurements take up to 24 hours to be processed and displayed on the main map. If you want to see if your data is being uploaded, use the advanced map options and filter by your device ID.
 
@@ -62,7 +62,7 @@ It is possible that the gateway that received your packets does not have its loc
 Did you mark your data as experimental? If so, the data will not show on the main map, but on a separate map containing only your experiment. Please disable experimental mode in the app so that you can contribute to the global map of TTN coverage.
 
 
-## While I was measuring I saw a lot of points on the app for locations I measured, but only a few points are shown on your map. Did some of the data points go missing, or not upload?</h5>
+## While I was measuring I saw a lot of points on the app for locations I measured, but only a few points are shown on your map. Did some of the data points go missing, or not upload?
 The most likely reason is that the GPS accuracy of your phone or device was not good enough. Make sure you have a location accuracy of less than 10 meters, or an HDOP of less than 2.
 
 Data logged to an experiment will not be displayed on the main map. Use the experiments section to display your experiment's data. Experiments have less strict location accuracy filters.
@@ -70,14 +70,14 @@ Data logged to an experiment will not be displayed on the main map. Use the expe
 It is possible that some datapoints did not upload correctly to our server because your internet connection was intermittent. This is however unlikely as a working internet connection is needed to receive data packets from TTN.
 
 
-## My results were showing on the map before, but is gone now.</h5>
+## My results were showing on the map before, but is gone now.
 
 When a gateway moves more than 100 meters it is seen as a new installation with different coverage. All old coverage data is hidden because the old coverage is now invalid.
 
 In a very few circumstances obvious incorrect measurements might be deleted from the map.
 
 
-## My gateway is not showing on TTN Mapper</h5>
+## My gateway is not showing on TTN Mapper
 
 For a gateway to appear on TTN Mapper its location needs to be known, and it needs to have at least one coverage mapping point uploaded to TTN Mapper. In other words if a gateway has not been measured yet, the gateway will not appear on TTN Mapper.
 
@@ -91,7 +91,7 @@ Also check that your privacy settings make the status and location of your gatew
 TTN Mapper will use the location configured on the TTN Console first. If the location is not configured there it will use the location which the gateway reports. That means that a gateway with a built in GPS will be located at the location set on the Console, not the location the gateway reports. Only if the location is not set on the Console the fallback location - the location reported by the gateway - will be used.
 
 
-## Can I integrate your data into my map? <br /> Can I download my data which I uploaded to you?<br /> Public API access. </h5>
+## Can I integrate your data into my map? <br /> Can I download my data which I uploaded to you?<br /> Public API access.
 
 The GEOJSON files used to draw the TTN Mapper maps are publicly available at <a href="http://ttnmapper.org/geojson">http://ttnmapper.org/geojson</a>.
 
@@ -100,14 +100,14 @@ Data is sometimes dumped into CSV files. The dumps are available at <a href="htt
 No public API access is given to the raw data. This is due to the amount of data and number of possible queries that won't be possible to handle on the server. Please use the dumps and your own database.
 
 
-## I want you to remove my gateway or measurement points from your map (privacy, etc)</h5>
+## I want you to remove my gateway or measurement points from your map (privacy, etc)
 
 If you change your gateway's location to another one more than 100m away, any old measurements for your gateway will be hidden automatically.
 
 In any other circumstance, contact us.
 
 
-## How can I support the project</h5>
+## How can I support the project
 
 One way of supporting the project is by contributing to the open source code on <a href="https://github.com/ttnmapper">Github</a>.
 
@@ -121,7 +121,7 @@ The project however has a monthly running cost which was covered by The Shuttlew
 For details contact us.
 
 
-## My question is not answered here</h5>
+## My question is not answered here
 
 * Ask your question in the #ttnmapper channel on the TTN Slack.
 * Send me a message to <info@ttnmapper.org>
