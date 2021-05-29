@@ -57,7 +57,11 @@ This is a big change to the backend systems, and has already started in December
 
 ## AWS IoT Core for LoRaWAN
 
-Not yet supported
+Not yet supported.
+
+### Issues
+
+No easy way to get data out to a REST API and on an MQTT broker.
 
 ## Amazon Sidewalk
 
@@ -65,8 +69,8 @@ Not yet supported
 
 ## Helium
 
-Not yet supported
+Not supported, and likely no need due to https://mappers.helium.com/
 
 ## Sigfox
 
-Not yet supported, and will likely not be supported due to licensing restrictions.
+Not supported, and will likely not be supported due to licensing restrictions.
