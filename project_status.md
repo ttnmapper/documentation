@@ -5,6 +5,9 @@ This is a big change to the backend systems that has already started in December
 
 ## The Things Network V2
 
+- [x] Data accepted and stored in TTN Mapper's database
+- [x] Android app support
+- [x] iOS app support
 - [x] Integration: available on v2 console
 - [x] Device raw data: available
 - [x] Gateway raw data: available
@@ -16,6 +19,9 @@ This is a big change to the backend systems that has already started in December
 
 ## The Things Stack
 
+- [x] Data accepted and stored in TTN Mapper's database
+- [x] Android app support
+- [ ] iOS app support: not yet implemented - help needed
 - [x] Webhook Template: available on v3 console. See [V3 integration](integration/tts-integration-v3.md).
 - [x] Device raw data: Using the Advanced maps, one can view your device's raw data on the map. This will only show non-experimental points. The CSV option for per-device raw data will show experimental and non-experimental data.
 - [ ] Experiment raw data: not yet implemented
@@ -33,6 +39,9 @@ This is a big change to the backend systems that has already started in December
 
 ## Chirp Stack
 
+- [x] Data accepted and stored in TTN Mapper's database
+- [x] Android app support - partial, as network identification needs to be refactored
+- [ ] iOS app support
 - [ ] Integration: TTN Mapper will ingest data from ChirpStack if a webhook integration has been set up, accrding to [ChirpStack integration](integrations/chirpstack.md).
 - [x] Device raw data: available
 - [ ] Gateway raw data: not yet implemented
