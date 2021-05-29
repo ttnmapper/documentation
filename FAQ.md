@@ -28,16 +28,16 @@ The assumption is that your end device with a GPS on it sends at least its latit
 Make sure you have a Payload decoder function enabled on the TTN Console that decodes the raw payload into a json object. The JSON object should contain the keys "<b>latitude</b>", "<b>longitude</b>" and "<b>altitude</b>" and one of "<b>hdop</b>", "accuracy" or "sats". When using the Cayenne LPP data format, the GPS coordinates will be decoded into a different JSON format, but this format is also supported. Cayenne LPP does not contain a GPS accuracy, and therefore this data will be considered as inferior and will carry less weight in calculation of coverage, and will be deleted first during data cleanup.
 
 On the TTN Console, open your application and then click on Integrations. Search for the TTN Mapper integration and click on it. 
-* Process ID: fill in a unique string describing this integration. The value does not have an influence on the correct functionality of the integration.</li>
-* E-mail address: fill in a valid email address. This email address will be used in the future to associate all data to you, and guarantee the quality of the data.</li>
-* Port filter: This text field can be left <b>empty</b> in the most cases. If you are using your application for multiple purposes, and only send GPS coordinates on one specific port, you can use this field to specify the port on which the GPS coordinates are sent.</li>
-* Experiment name: This text field can be left <b>empty</b> in the most cases. If you are measuring coverage that is out of the ordinary, like taking a GPS tracker on an <b>aeroplane</b>, strapping it to a <b>balloon</b> or <b>drone</b>, or climbing a <b>high mast</b> or <b>tower</b> that is not publicly accessible, your data should be logged to an experiment to keep it separated from the main TTN Mapper global coverage map.</li>
+* Process ID: fill in a unique string describing this integration. The value does not have an influence on the correct functionality of the integration.
+* E-mail address: fill in a valid email address. This email address will be used in the future to associate all data to you, and guarantee the quality of the data.
+* Port filter: This text field can be left <b>empty</b> in the most cases. If you are using your application for multiple purposes, and only send GPS coordinates on one specific port, you can use this field to specify the port on which the GPS coordinates are sent.
+* Experiment name: This text field can be left <b>empty</b> in the most cases. If you are measuring coverage that is out of the ordinary, like taking a GPS tracker on an <b>aeroplane</b>, strapping it to a <b>balloon</b> or <b>drone</b>, or climbing a <b>high mast</b> or <b>tower</b> that is not publicly accessible, your data should be logged to an experiment to keep it separated from the main TTN Mapper global coverage map.
 
 For more info see the following articles:
-* <a href="https://www.hackster.io/Amedee/the-things-network-node-for-ttnmapper-org-a8bcd4">Hackster.io - The Things Network Node for TTNmapper.org</a></li>
-* <a href="https://github.com/ricaun/esp32-ttnmapper-gps">ESP32 TTN Mapper GPS</a></li>
-* <a href="https://www.thethingsnetwork.org/labs/story/payload-decoder-for-adeunis-field-test-device-ttn-mapper-integration">Adeunis Field Test device</a></li>
-* <a href="https://github.com/ttnmapper/gps-node-examples">Other examples</a></li>
+* <a href="https://www.hackster.io/Amedee/the-things-network-node-for-ttnmapper-org-a8bcd4">Hackster.io - The Things Network Node for TTNmapper.org</a>
+* <a href="https://github.com/ricaun/esp32-ttnmapper-gps">ESP32 TTN Mapper GPS</a>
+* <a href="https://www.thethingsnetwork.org/labs/story/payload-decoder-for-adeunis-field-test-device-ttn-mapper-integration">Adeunis Field Test device</a>
+* <a href="https://github.com/ttnmapper/gps-node-examples">Other examples</a>
 
 
 ## When should I use an "experiment" to map my coverage</h5>
@@ -113,15 +113,15 @@ One way of supporting the project is by contributing to the open source code on 
 
 The project however has a monthly running cost which was covered by The Shuttleworth Foundation up to 2018. At this point there is no financial support from any official sources. If you want to financially support the project there are a couple of methods:
 
-* <a href="https://www.patreon.com/ttnmapper">Patreon</a></li>
-* Any Patreon tier as a support contract with commercial invoice - contact us for details</li>
-* <a href="https://paypal.me/ttnmapper">Once off donation via PayPal</a></li>
-* Once off donation into a European bank account (IBAN) - contact us for details</li>
+* <a href="https://www.patreon.com/ttnmapper">Patreon</a>
+* Any Patreon tier as a support contract with commercial invoice - contact us for details
+* <a href="https://paypal.me/ttnmapper">Once off donation via PayPal</a>
+* Once off donation into a European bank account (IBAN) - contact us for details
 
 For details contact us.
 
 
 ## My question is not answered here</h5>
 
-* Ask your question in the #ttnmapper channel on the TTN Slack.</li>
+* Ask your question in the #ttnmapper channel on the TTN Slack.
 * Send me a message to <info@ttnmapper.org>
