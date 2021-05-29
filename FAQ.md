@@ -21,7 +21,7 @@ Also see <a href="https://www.thethingsnetwork.org/labs/story/using-ttnmapper-on
 
 <a href="https://www.thethingsnetwork.org/docs/applications/ttnmapper/">See the documentation here.</a>
 
-If you have a GPS tracker that sends its own location in the payload of the LoRa packet, it is as easy as enabling the TTN Mapper integration to contribute data to the coverage map.</p>
+If you have a GPS tracker that sends its own location in the payload of the LoRa packet, it is as easy as enabling the TTN Mapper integration to contribute data to the coverage map.
 
 The assumption is that your end device with a GPS on it sends at least its latitude and longitude, but preferably also its altidude and HDOP values. If HDOP is not available, the accuracy of the GPS fix in metres will be accepted. As a last resort the satellite count can be used.
 
@@ -81,7 +81,7 @@ In a very few circumstances obvious incorrect measurements might be deleted from
 
 For a gateway to appear on TTN Mapper its location needs to be known, and it needs to have at least one coverage mapping point uploaded to TTN Mapper. In other words if a gateway has not been measured yet, the gateway will not appear on TTN Mapper.
 
-Make sure your gateway's GPS coordinates are configured correctly on the TTN Console. Also make sure fake_gps is disabled in the gateway's local_conf.json file. </p>
+Make sure your gateway's GPS coordinates are configured correctly on the TTN Console. Also make sure fake_gps is disabled in the gateway's local_conf.json file.
     
 Also check that your privacy settings make the status and location of your gateway public.
     
