@@ -1,7 +1,7 @@
 # Project Status
 
 TTN Mapper is currently undergoing a major refactor to support The Things Stack (v3). To fully support TTS, TTN Mapper needs to be able to support multiple networks. 
-This is a big change to the backend systems that has already started in December 2018.
+This is a big change to the backend systems, and has already started in December 2018. The current major focus is uniquely identifying a network and gateways. After this is sorted out the focus will shift to the website.
 
 ## The Things Network V2
 
