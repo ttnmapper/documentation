@@ -1,5 +1,8 @@
 # TTN Mapper Documentation
 
+## Project status
+See [project status](PROJECT_STATUS.md)
+
 ## Using the Android app
 See [this lab](https://www.thethingsnetwork.org/labs/story/using-ttnmapper-on-android)
 
