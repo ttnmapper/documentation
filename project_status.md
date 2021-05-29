@@ -5,7 +5,7 @@ This is a big change to the backend systems, and has already started in December
 
 ## General
 
-- [ ] Simulation based coverage - long term goal
+- [ ] Simulation based coverage - research topic
 - [ ] Cross platform mobile app (Flutter) - help wanted
 - [ ] Website rewrite in JS framework - help wanted
 - [ ] Website user logins, network claims, private network subscriptions - help wanted
