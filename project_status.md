@@ -54,3 +54,19 @@ This is a big change to the backend systems, and has already started in December
 ### Issues
 
 * Identifying a network: https://github.com/brocaar/chirpstack-network-server/issues/532
+
+## AWS IoT Core for LoRaWAN
+
+Not yet supported
+
+## Amazon Sidewalk
+
+Not yet supported
+
+## Helium
+
+Not yet supported
+
+## Sigfox
+
+Not yet supported, and will likely not be supported due to licensing restrictions.
