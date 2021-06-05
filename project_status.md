@@ -49,7 +49,7 @@ This is a big change to the backend systems, and has already started in December
 - [x] Data accepted and stored in TTN Mapper's database
 - [x] Android app support - partial, as network identification needs to be refactored
 - [ ] iOS app support
-- [x] Integration: TTN Mapper will ingest data from ChirpStack if a webhook integration has been set up, according to [ChirpStack integration](integrations/chirpstack).
+- [x] Integration: TTN Mapper will ingest data from ChirpStack if a webhook integration has been set up, according to [ChirpStack integration](integration/chirpstack.md).
 - [x] Device raw data: available
 - [ ] Gateway raw data: not yet implemented
 - [ ] Gateway markers: not yet implemented
