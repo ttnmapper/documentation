@@ -52,7 +52,7 @@ This is a big change to the backend systems, and has already started in December
 - [x] Integration: TTN Mapper will ingest data from ChirpStack if a webhook integration has been set up, according to [ChirpStack integration](integration/chirpstack.md).
 - [x] Device raw data: available
 - [ ] Gateway raw data: not yet implemented
-- [ ] Gateway markers: not yet implemented
+- [x] Gateway markers: partially available
 - [ ] Gateway status: unsure if this is available
 - [ ] Radar plots: not yet implemented
 - [ ] Heatmap: Data from all networks are currently used to draw the heatmap.
