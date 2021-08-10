@@ -36,13 +36,11 @@ This is a big change to the backend systems, and has already started in December
 - [ ] Gateway markers: Currently pulling from V2. If gateway ID on V3 matches the ID on V2, the V2 gateway location will be used to draw the marker.
 - [ ] Gateway status: Will use status of V2 network if gateway ID matches.
 - [ ] Radar plots: not yet implemented
-- [ ] Heatmap: Data from all networks are currently used to draw heatmaps. This needs to change to be a per-network heatmap.
+- [x] Heatmap: Data from all networks are currently used to draw heatmaps. This needs to change to be a per-network heatmap.
 - [ ] Area plots: not yet implemented
 
 ### Issues
 * Network identification
-* Gateway identification via Packet Broker
-* https://github.com/TheThingsNetwork/lorawan-stack/issues/4076
 
 ## Chirp Stack
 
