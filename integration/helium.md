@@ -17,7 +17,7 @@ Once the integration is enabled any message sent by the end device will also be 
   1. A JSON object containing the keys "**latitude**", "**longitude**" and "**altitude**". Some variations of these keys will also work. 
   2. In addition the JSON object should preferably contain one of the following keys "**hdop**", "**accuracy**" or "**sats**".
 
-> As an alternative teh payload decoder for [Helium Cargo](https://docs.helium.com/use-the-network/console/integrations/cargo/) or [Helium Mappers](https://docs.helium.com/use-the-network/coverage-mapping/mappers-quickstart/)mappers can be used as well with TTN Mapper. 
+> As an alternative the payload decoder for [Helium Cargo](https://docs.helium.com/use-the-network/console/integrations/cargo/) or [Helium Mappers](https://docs.helium.com/use-the-network/coverage-mapping/mappers-quickstart/)mappers can be used as well with TTN Mapper. 
 
 If you are developing your own GPS enabled LoRa device please check the following [Github repository](https://github.com/ttnmapper/gps-node-examples) for example end-device software and decoder functions to be used with them.
 
@@ -36,9 +36,7 @@ On Helium console, click on the *add (+)* icon in the bottom left and select **A
 
 * **Endpoint URL (Required)**: Enter `https://integrations.ttnmapper.org/helium/v1`
 * **Step 3 - Name your Integration (Required)**: Enter the name for your integration
-* **HTTP Headers (Mandatory)**: Add header **TTNMAPPERORG-NETWORK** and set it to 'HELIUM'
-* **HTTP Headers (Mandatory)**: Add header **TTNMAPPERORG-USER** and set your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
-* **HTTP Headers (Optional)**: Add headers to the integration as specified below at **Headers**.
+* **HTTP Headers (Required)**: Add header **TTNMAPPERORG-USER** and set your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 * Click **Add Integration** to confirm and save your integration.
 
 #### Optional Headers
