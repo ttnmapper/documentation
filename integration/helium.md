@@ -25,7 +25,7 @@ Following steps shall be followed to setup Helium for TTN Mapper:
 
 Assuming you created a device and setup a payload decoder the meets the requirements as stated before:
 1. Create integration
-2. Create label
+2. Create label and link devices
 3. Configure your TTN Mapper application in **Flows**
 
 ### 1. Create the integration
@@ -44,16 +44,31 @@ On Helium console, click on the *add (+)* icon in the bottom left and select **A
 * **TTNMAPPERORG-EXPERIMENT**: You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 metre above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a balloon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
 * **TTNMAPPERORG-USER**: Add your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 
-## 2. Create label
+## 2. Create label and link devices
 
-On Helium console, click on the **add (+)** icon in the bottom left and select **Add label**. Enter the label name, eg. 'ttnmapper'.
+On Helium console:
+* click on the **add (+)** icon in the bottom left and select **Add label**. Enter the label name, eg. 'ttnmapper'.
+* click on devices, select the device that will be used for TTN Mapper and add label **ttnmapper** to the device.
 
 ## 3. Configure your TTN Mapper application in 'Flows' 
 
+On Helium console, click **Flows** in the upper left corner.
+
+* Add nodes to the workspace:
+  * drag device group with_label_ **ttnmapper** to the workspace
+  * drag the _function_ with the payload decoder you will use for TTN Mapper to the workspace
+  * drag _integration_ **ttnmapper** to the workspace
+* Link label **ttnmapper** (blue) to your Function (purple)
+* Link label Function (purple) to the integration **ttnmapper** (blue)
+* Open inspector for _label_ **ttnmapper** and verfy if the device is linked to the _label_.
+
+### Configuring Multiple Packets
+
+To be able to see as much Hotspots as possible all available packets shall be purchased. Therefore configure [Multiple Packets](https://docs.helium.com/use-the-network/console/adr/#multiple-packets) for the device group.
 
 ## Verify the integration is working correctly
 
-In order to verify whether the integration has been configured correctly, go to the Live Data page for your device on the Console. Switch on your device and make sure you see data appearing there. Now go to the TTN Mapper website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section fill in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
+In order to verify whether the integration has been configured correctly, go to the Live Data page for your device on the Console. Switch on your device and make sure you see data appearing in console. Now go to the TTN Mapper website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section fill in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
 
 > TTN Mapper's support for Helium is still a work in progress and therefore not all maps will show the collected mapping data. Using the per-device raw data map and csv is the most reliable way to make sure your data is accepted into the TTN Mapper database.
 
