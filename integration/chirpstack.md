@@ -33,10 +33,10 @@ On the Chirpstack-UI, open your application and then click on the *Integrations*
 
 #### Mandatory
 * **TTNMAPPERORG-NETWORK**: Name of your network, for example: `my.network.name`. Try and make this unique, as this value will be used to distinguish your network's coverage and gateways from other ChirpStack networks' coverage and gateways. This header is a temporary workaround until a proper network identifier is added to ChirpStack. See [this Github issue](https://github.com/brocaar/chirpstack-network-server/issues/532)
-* **TTNMAPPERORG-USER**: Add your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 
 #### Optional
 * **TTNMAPPERORG-EXPERIMENT**: You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 metre above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a balloon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
+* **TTNMAPPERORG-USER**: Add your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 
 Click on "Update Integration".
 
