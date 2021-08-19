@@ -47,7 +47,7 @@ On Helium console, click on the *add (+)* icon in the bottom left and select **A
 ## 2. Create label and link devices
 
 On Helium console:
-* click on the **add (+)** icon in the bottom left and select **Add label**. Enter the label name, eg. 'ttnmapper'.
+* click on the **add (+)** icon in the bottom left and select **Add label**. Enter the label name, eg. _ttnmapper_.
 * click on devices, select the device that will be used for TTN Mapper and add label **ttnmapper** to the device.
 
 ## 3. Configure your TTN Mapper application in 'Flows' 
@@ -55,7 +55,7 @@ On Helium console:
 On Helium console, click **Flows** in the upper left corner.
 
 * Add nodes to the workspace:
-  * drag device group with_label_ **ttnmapper** to the workspace
+  * drag device group with _label_ **ttnmapper** to the workspace
   * drag the _function_ with the payload decoder you will use for TTN Mapper to the workspace
   * drag _integration_ **ttnmapper** to the workspace
 * Link label **ttnmapper** (blue) to your Function (purple)
@@ -74,7 +74,7 @@ In order to verify whether the integration has been configured correctly, go to 
 
 ## Experiments
 
-### When should I use an "experiment" to map my coverage
+### When should I use an "experiment" to map my coverage?
 
 An experiment is a way to keep unrealistic coverage measurements away from the main map. Experiments should be used when testing new hardware or coverage is mapped from aeroplanes, balloons or any similar unrealistic altitudes.
 
