@@ -17,6 +17,8 @@ Once the integration is enabled any message sent by the end device will also be 
   1. A JSON object containing the keys "**latitude**", "**longitude**" and "**altitude**". Some variations of these keys will also work. 
   2. In addition the JSON object should preferably contain one of the following keys "**hdop**", "**accuracy**" or "**sats**".
 
+> As an alternative teh payload decoder for [Helium Cargo](https://docs.helium.com/use-the-network/console/integrations/cargo/) or [Helium Mappers](https://docs.helium.com/use-the-network/coverage-mapping/mappers-quickstart/)mappers can be used as well with TTN Mapper. 
+
 If you are developing your own GPS enabled LoRa device please check the following [Github repository](https://github.com/ttnmapper/gps-node-examples) for example end-device software and decoder functions to be used with them.
 
 ## Setting up Helium for TTN Mapper
@@ -34,15 +36,14 @@ On Helium console, click on the *add (+)* icon in the bottom left and select **A
 
 * **Endpoint URL (Required)**: Enter `https://integrations.ttnmapper.org/helium/v1`
 * **Step 3 - Name your Integration (Required)**: Enter the name for your integration
-* **Endpoint**: Add `https://integrations.ttnmapper.org/chirp/v3/events`
 * **HTTP Headers (Mandatory)**: Add header **TTNMAPPERORG-NETWORK** and set it to 'HELIUM'
+* **HTTP Headers (Mandatory)**: Add header **TTNMAPPERORG-USER** and set your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 * **HTTP Headers (Optional)**: Add headers to the integration as specified below at **Headers**.
 * Click **Add Integration** to confirm and save your integration.
 
 #### Optional Headers
 
 * **TTNMAPPERORG-EXPERIMENT**: You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 metre above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a balloon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
-* **TTNMAPPERORG-USER**: Add your email address in this header to allow TTN Mapper to associate your coverage data with you. This will allow to easily find your data, and also verify when you request your data to be deleted.
 
 ## 2. Create label and link devices
 
