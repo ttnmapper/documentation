@@ -6,7 +6,7 @@ The goal of TTN Mapper is to provide a map of the actual coverage of the TTN gat
 
 Go to https://ttnmapper.org for the global coverage map.
 
-> The webhook template configures an incorrect base URL, and mapping therefore fails. Please follow [Fix Base Url](#fix-base-url) below to fix this.
+A video showing how to register and configure a GPS tracker to feed data to TTN Mapper can be found here: https://youtu.be/8KcHVzY-Yng
 
 ## Prerequisites
 
