@@ -5,10 +5,17 @@ This is a big change to the backend systems, and has already started in December
 
 ## General
 
-- [ ] Simulation based coverage - research topic
-- [ ] Cross platform mobile app (Flutter) - help wanted
+- [X] Live mapping data feeds to new backend
+- [X] Gateway updates from V2 and V3 into new backend
+- [X] Migrate old gateway locations from old to new database
+- [ ] Migrate old mapping data (before 2020-06-27 19:46:05.713330 +00:00) to new database
+- [ ] Generate radar plots from new backend
+- [ ] Circle plots, area plots
+- [X] Heatmap plots from new backend
 - [ ] Website rewrite in JS framework - help wanted
 - [ ] Website user logins, network claims, private network subscriptions - help wanted
+- [ ] Simulation based coverage - research topic
+- [ ] Cross platform mobile app (Flutter) - help wanted
 
 ## The Things Network V2
 
