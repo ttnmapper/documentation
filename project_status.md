@@ -8,7 +8,7 @@ This is a big change to the backend systems, and has already started in December
 - [X] Live mapping data feeds to new backend - since 2020-06-27 19:46 UTC
 - [X] Gateway updates from V2 and V3 into new backend - V2 since 2020-06-27 19:37 UTC, V3 since 2021-07-03 09:35 UTC
 - [X] Migrate old gateway locations from old to new database. Completed on 2021-09-04.
-- [ ] Migrate old mapping data (before 2020-06-27 19:46 UTC) to new database. Started 2021-09-17.
+- [X] Migrate old mapping data (before 2020-06-27 19:46 UTC) to new database. Completed 2021-09-18.
 - [ ] Generate radar plots from new backend
 - [ ] Circle plots, area plots
 - [X] Heatmap plots from new backend
