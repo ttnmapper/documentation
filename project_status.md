@@ -10,7 +10,7 @@ This is a big change to the backend systems, and has already started in December
 - [X] Migrate old gateway locations from old to new database. Completed on 2021-09-04.
 - [X] Migrate old mapping data (before 2020-06-27 19:46 UTC) to new database. Completed 2021-09-18.
 - [X] Clean up gateway moves: remove duplicate locations, using oldest entry. Done 2021-09-19.
-- [ ] Heatmap plots from new backend. Rebuild using old data started 2021-09-19 15:30.
+- [ ] Heatmap plots from new backend. Rebuild using old data started 2021-09-19 15:30 UTC.
 - [ ] Add V2 to V3 coverage migrate form and script
 - [ ] Generate radar plots from new backend
 - [ ] Circle plots, area plots
