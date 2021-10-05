@@ -10,8 +10,8 @@ This is a big change to the backend systems, and has already started in December
 - [X] Migrate old gateway locations from old to new database. Completed on 2021-09-04.
 - [X] Migrate old mapping data (before 2020-06-27 19:46 UTC) to new database. Completed 2021-09-18.
 - [X] Clean up gateway moves: remove duplicate locations, using oldest entry. Done 2021-09-19.
-- [ ] Heatmap plots from new backend. Rebuild using old data started 2021-09-19 15:30 UTC.
-- [ ] Add V2 to V3 coverage migrate form and script
+- [ ] Heatmap plots from new backend. Work in progress. Data cleanup underway. Rebuild using old data started 2021-09-19 15:30 UTC.
+- [ ] Add V2 to V3 coverage migrate form and script. Partial. Google form set up.
 - [ ] Generate radar plots from new backend
 - [ ] Circle plots, area plots
 - [ ] Website rewrite in JS framework - help wanted
@@ -40,10 +40,10 @@ This is a big change to the backend systems, and has already started in December
 - [ ] iOS app support: not yet implemented - help needed
 - [x] Webhook Template: available on v3 console. See [V3 integration](integration/tts-integration-v3.md).
 - [x] Device raw data: Using the Advanced maps, one can view your device's raw data on the map. This will only show non-experimental points. The CSV option for per-device raw data will show experimental and non-experimental data.
-- [ ] Experiment raw data: not yet implemented
-- [ ] Gateway raw data: Not yet implemented
-- [ ] Gateway markers: Currently pulling from V2. If gateway ID on V3 matches the ID on V2, the V2 gateway location will be used to draw the marker.
-- [ ] Gateway status: Will use status of V2 network if gateway ID matches.
+- [x] Experiment raw data
+- [x] Gateway raw data: available
+- [ ] Gateway markers: partial. V3 gateway markers are currently only shown per network on the heatmap. Homepage shows TTS-CE (TTNv3).
+- [x] Gateway status: gateway statuses pulls from Packet Broker mapping API
 - [ ] Radar plots: not yet implemented
 - [x] Heatmap: Data from all networks are currently used to draw heatmaps. This needs to change to be a per-network heatmap.
 - [ ] Area plots: not yet implemented
@@ -58,11 +58,11 @@ This is a big change to the backend systems, and has already started in December
 - [ ] iOS app support
 - [x] Integration: TTN Mapper will ingest data from ChirpStack if a webhook integration has been set up, according to [ChirpStack integration](integration/chirpstack.md).
 - [x] Device raw data: available
-- [ ] Gateway raw data: not yet implemented
+- [x] Gateway raw data: available
 - [x] Gateway markers: partially available
 - [ ] Gateway status: unsure if this is available
 - [ ] Radar plots: not yet implemented
-- [ ] Heatmap: Data from all networks are currently used to draw the heatmap.
+- [x] Heatmap: implemented, but only publicly available for Wolfsburg.Digital
 - [ ] Area plots: not yet implemented
 
 ### Issues
