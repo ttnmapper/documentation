@@ -9,6 +9,8 @@ The source code for the TTN Mapper system is open source and <a href="https://gi
 
 ## How can I contribute data?
 
+Have a look at the [documentation index](https://docs.ttnmapper.org/) to find detailed information.
+
 ### Using any LoRaWAN device and a smartphone
 
 * A node transmitting to The Things Network. An Arduino with a RN2483 radio is ideal. Have a look at <a href="https://github.com/jpmeijers/RN2483-Arduino-Library">this library</a> for example code and wiring instructions for the RN2483 and Arduino. Your node can however be any hardware and run any code, as long as you know the address the device use to transmit data to The Things Network.
@@ -123,5 +125,6 @@ For details contact us.
 
 ## My question is not answered here
 
+* Have a look at the rest of the documentation: https://docs.ttnmapper.org/
 * Ask your question in the #ttnmapper channel on the TTN Slack.
 * Send a message to <info@ttnmapper.org>
