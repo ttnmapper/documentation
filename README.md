@@ -2,6 +2,7 @@
 
 * [Frequently asked questions](FAQ.md)
 * [Project status](project_status.md)
+* [Copy coverage from V2 to V3](https://docs.google.com/forms/d/e/1FAIpQLSfyc9NeVMnWMXXLCwcH2KxPqpT-gVZWguyjbp_iyyfCuVqK5w/viewform?usp=sf_link)
 * [How to use the Android app video](https://youtu.be/bBDFxjr5xTQ)
 * [How to use the Android app tutorial (old)](https://www.thethingsnetwork.org/labs/story/using-ttnmapper-on-android)
 * [Using a Things Node with the Android app or the iPhone app](https://www.thethingsnetwork.org/labs/story/mapping-gateway-coverage-using-a-things-node)
