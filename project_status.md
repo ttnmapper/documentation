@@ -9,7 +9,7 @@ This is a big change to the backend systems, and has already started in December
 - [X] Gateway updates from V2 and V3 into new backend - V2 since 2020-06-27 19:37 UTC, V3 since 2021-07-03 09:35 UTC
 - [X] Migrate old gateway locations from old to new database. Completed on 2021-09-04.
 - [X] Migrate old mapping data (before 2020-06-27 19:46 UTC) to new database. Completed 2021-09-18.
-- [ ] Migrate old experiments (before 2020-06-27 19:46 UTC) to new database. Started 2021-10-08.
+- [X] Migrate old experiments (before 2020-06-27 19:46 UTC) to new database. Completed 2021-10-08.
 - [X] Clean up gateway moves: remove duplicate locations, using oldest entry. Done 2021-09-19.
 - [ ] Heatmap plots from new backend. Work in progress. Data cleanup underway. Rebuild using old data started 2021-09-19 15:30 UTC.
 - [ ] Add V2 to V3 coverage migrate form and script. Partial. Google form set up.
