@@ -1,6 +1,6 @@
 title: TTN Mapper Documentation
 logo: /assets/img/logo.svg
-description: TTN Mapper is a tool to map the coverage of The Things Network.
+description: TTN Mapper and CoverageMap.org are tools to map the coverage of LoRaWAN networks like The Things Network, The Things Stack, Helium and ChirpStack.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
