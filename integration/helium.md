@@ -4,7 +4,7 @@ A HTTP Integration allows you to upload data to CoverageMap.net
 
 The goal of CoverageMap.net is to provide a map of the actual coverage of Helium Hotspots. Contributors to CoverageMap.net measure the performance of Hotspots in their vicinity and upload this information to the CoverageMap.net website. Here the information is aggregated and shared with the community.
 
-Go to https://coveragemap.net for the global coverage map.
+Go to [CoverageMap.net](https://coveragemap.net) for the global coverage map.
 
 
 ## Prerequisites
@@ -30,7 +30,7 @@ It is useful to label your mapping devices. On the console under the devices pag
 
 On the console go to `Nodes` -> `Functions`. Create a new function `(+)`. Function type Decoder. If your device transmits using the Cayenne LPP format, choose that. Otherwise choose custom script and provide a valid decoder for your device. Make sure your decoder provides at least the Latitude and Longitude fields.
 
-Some standard payload decoders can be found here: https://github.com/helium/console-decoders
+Some standard payload decoders can be found on [Helium's GitHub](https://github.com/helium/console-decoders)
 
 ### 4. Integration
 
