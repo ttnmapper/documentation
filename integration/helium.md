@@ -1,10 +1,10 @@
 # Helium integration
 
-A HTTP Integration allows you to upload data to CoverageMap.org 
+A HTTP Integration allows you to upload data to CoverageMap.net 
 
-The goal of CoverageMap.org is to provide a map of the actual coverage of Helium Hotspots. Contributors to CoverageMap.org measure the performance of Hotspots in their vicinity and upload this information to the CoverageMap.org website. Here the information is aggregated and shared with the community.
+The goal of CoverageMap.net is to provide a map of the actual coverage of Helium Hotspots. Contributors to CoverageMap.net measure the performance of Hotspots in their vicinity and upload this information to the CoverageMap.net website. Here the information is aggregated and shared with the community.
 
-Go to https://coveragemap.org for the global coverage map.
+Go to https://coveragemap.net for the global coverage map.
 
 
 ## Prerequisites
@@ -18,7 +18,7 @@ Go to https://coveragemap.org for the global coverage map.
 
 ### 1. GPS tracker device
 
-In order to contribute to CoverageMap.org, a LoRaWAN device with a GPS, capable of transmitting its GPS coordinates, is required. The minimal location information that needs to be sent by the device is its latitude and longitude. Preferably it should also send its altitude and HDOP values.
+In order to contribute to CoverageMap.net, a LoRaWAN device with a GPS, capable of transmitting its GPS coordinates, is required. The minimal location information that needs to be sent by the device is its latitude and longitude. Preferably it should also send its altitude and HDOP values.
 
 Regsiter your device on the Helium Console under `Nodes` -> `Devices`.
 
@@ -38,7 +38,7 @@ End point details:
 * POST
 * Endpoint URL: `https://integrations.ttnmapper.org/helium/v1`
 * HTTP Headers: Key = `TTNMAPPERORG-USER`, Value = your email address
-* Name: CoverageMap.org (or any other name you prefer)
+* Name: CoverageMap.net (or any other name you prefer)
 * Add integration
 * Do not change the JSON message template. If you do, delete the integration and create it again.
 
@@ -57,7 +57,7 @@ At the top left hand side click on Nodes, Labels, and drag the mapping nodes lab
 
 Then choose functions and drag the decoder you created in step 3 to the open space. 
 
-Lastly, click on integrations and drag the CoverageMap.org integration to the open space.
+Lastly, click on integrations and drag the CoverageMap.net integration to the open space.
 
 You should now have three blocks side by side in the window.
 
@@ -70,7 +70,7 @@ Connect the label node to the decoder node, and then connect the decoder node to
 
 ## Verify the integration is working correctly
 
-In order to verify whether the integration has been configured correctly, go to your device on the Console. Switch on your device and make sure you see data appearing under real time packets. Now go to the CoverageMap.org website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section enter your Device Name in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
+In order to verify whether the integration has been configured correctly, go to your device on the Console. Switch on your device and make sure you see data appearing under real time packets. Now go to the ttnmapper.org website and in the menu select "[Advanced maps](https://ttnmapper.org/advanced-maps/)". In the "Device data" section enter your Device Name in the Device ID field. In the Start Date and End Date fields choose today. Click on "View map" and you should see the data points sent by your end device.
 
 ## Experiments
 
@@ -82,5 +82,5 @@ In other words logging to the main map should only be done from roughly 0.5m-2m 
 
 ### Enable or disable logging to an experiment
 
-* To log to an experiment, we need to add a header to the HTTP integration which will tell CoverageMap.org to log the data to an experiment, with Key = **TTNMAPPERORG-EXPERIMENT**. You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 meter above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a balloon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
+* To log to an experiment, we need to add a header to the HTTP integration which will tell CoverageMap.net to log the data to an experiment, with Key = **TTNMAPPERORG-EXPERIMENT**. You only need to provide an experiment name if you are testing and do not want your mapping results to contribute to the main coverage map for the network. In other words, when you are mapping normally with a device that is between 1 and 2 meter above ground level, you can leave this field blank. If you are doing anything else like launching and tracking a balloon, please provide a unique experiment name here. Adding the date to the experiment name helps to find it again later. Also see [Experiments](#experiments).
 * To stop logging to an experiment, delete the `TTNMAPPERORG-EXPERIMENT` header entry.
