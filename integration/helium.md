@@ -30,6 +30,8 @@ It is useful to label your mapping devices. On the console under the devices pag
 
 On the console go to `Nodes` -> `Functions`. Create a new function `(+)`. Function type Decoder. If your device transmits using the Cayenne LPP format, choose that. Otherwise choose custom script and provide a valid decoder for your device. Make sure your decoder provides at least the Latitude and Longitude fields.
 
+Some standard payload decoders can be found here: https://github.com/helium/console-decoders
+
 ### 4. Integration
 
 On the console go to `Nodes` -> `Integrations`. Add a new integration. Choose `HTTP` under custom.
