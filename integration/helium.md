@@ -1,6 +1,6 @@
 # Helium integration
 
-A HTTP Integration allows you to upload data to CoverageMap.net 
+A HTTP Integration allows you to upload data to CoverageMap.net (aka TTN Mapper)
 
 The goal of CoverageMap.net is to provide a map of the actual coverage of Helium Hotspots. Contributors to CoverageMap.net measure the performance of Hotspots in their vicinity and upload this information to the CoverageMap.net website. Here the information is aggregated and shared with the community.
 
@@ -15,6 +15,8 @@ Go to [CoverageMap.net](https://coveragemap.net) for the global coverage map.
 4. Integration
 5. Configure Multiple Packets
 6. Set up flow
+
+If you are already sending mapping data to https://mappers.helium.com/, you can skip to step nr 4 where we configure the CoverageMap.net integration. CoverageMap.net supports the same decoded payload format as https://mappers.helium.com/.
 
 ### 1. GPS tracker device
 
