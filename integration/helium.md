@@ -9,6 +9,8 @@ Go to [CoverageMap.net](https://coveragemap.net) for the global coverage map.
 
 ## Prerequisites
 
+This guid is very similar to the [Quick Start guide for Helium Mappers](https://docs.helium.com/use-the-network/coverage-mapping/mappers-quickstart). The only difference is the address of the integration.
+
 1. GPS tracker device
 2. (optional) label to group mapping devices
 3. Payload decoder
@@ -33,6 +35,18 @@ It is useful to label your mapping devices. On the console under the devices pag
 On the console go to `Nodes` -> `Functions`. Create a new function `(+)`. Function type Decoder. If your device transmits using the Cayenne LPP format, choose that. Otherwise choose custom script and provide a valid decoder for your device. Make sure your decoder provides at least the Latitude and Longitude fields.
 
 Some standard payload decoders can be found on [Helium's GitHub](https://github.com/helium/console-decoders)
+
+The format and units of the expected fields in the decoded payload is the same as for [Helium Mappers](https://docs.helium.com/use-the-network/coverage-mapping/mappers-api/). Example:
+```
+"decoded": { 
+  "payload" : {
+    "accuracy": 2, // meters
+    "altitude": 2, // meters above mean sea level
+    "latitude": 38.811706, // degrees, North is positive, South is negative
+    "longitude": -121.607035 // degrees, East is positive, West is negative
+  }
+}
+```
 
 ### 4. Integration
 
@@ -70,6 +84,10 @@ Click on the device label. In the settings panel that opens on the right, click 
 Connect the label node to the decoder node, and then connect the decoder node to the integrations node. Like in the picture below.
 
 ![Helium flow](helium-flow.png)
+
+For a flow that contributes to CoverageMap.net, Helium Mappers and Cargo, it will look like this:
+
+![Helium flow mappers](helium-flow-mappers-cargo.png)
 
 
 ## Verify the integration is working correctly
