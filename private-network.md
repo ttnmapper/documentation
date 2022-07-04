@@ -44,7 +44,7 @@ If you have a requirement for a coveragemap, please contact us and we can do a f
   </div>
   <div>
     <label>
-      Your message:
+      Your message: <br />
       <textarea name="message"></textarea>
     </label>
   </div>
