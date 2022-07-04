@@ -36,15 +36,20 @@ If you have a requirement for a coveragemap, please contact us and we can do a f
   action="https://formspree.io/f/xyyoqzwl"
   method="POST"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <div>
+    <label>
+      Your email:
+      <input type="email" name="email">
+    </label>
+  </div>
+  <div>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+  </div>
+  <div>
+    <button type="submit">Send</button>
+  </div>
 </form>
 {:/nomarkdown}
