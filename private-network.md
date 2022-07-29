@@ -8,7 +8,7 @@ The most The Things Stack instances exchange messages via the Packet Broker.
 TTN Mapper is able to detect the forwarding and the home networks for these messages.
 For networks like these a cloud offering is available which includes a white labelled map. 
 The map is hosted under &lt;name&gt;.coveragemap.net, but an alias on your company domain can be set up.
-This solution starts at $20 per month, increasing with the number of gateways on your network.
+This solution starts at $50 per month, increasing with the number of gateways on your network.
 For the latest pricing details, please have a look at the description on [Patreon](https://www.patreon.com/ttnmapper).
 
 ## ChirpStack
