@@ -111,19 +111,7 @@ In any other circumstance, contact us.
 
 ## How can I support the project
 
-One way of supporting the project is by contributing to the open source code on <a href="https://github.com/ttnmapper">Github</a>.
-
-The project however has a monthly running cost which was covered by The Shuttleworth Foundation up to 2018. At this point there is no financial support from any official sources. If you want to financially support the project there are a couple of methods:
-
-* <a href="https://www.patreon.com/ttnmapper">Patreon</a>
-* Any Patreon tier as a support contract with commercial invoice - contact us for details
-* <a href="https://paypal.me/ttnmapper">Once off donation via PayPal</a>
-* Once off donation into a European bank account (IBAN) - contact us for details
-* Bitcoin (BTC): 36RvL4xZzfKvCsDgzvHvR7641aYLMrEhZQ
-* Ethereum (ETH): 0x401a057a896240C3881881d08aA0203534FC0801
-* Helium (HNT): 14UFK61863zFfPg6vwtJv1oGyvKCr7SGmsRFiZSFKdGmqdYaA6F
-
-For details contact us.
+Please see [Support the project](support-project.md)
 
 
 ## My question is not answered here
