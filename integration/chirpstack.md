@@ -1,6 +1,6 @@
 # ChirpStack integration
 
-{% include warning.html content="TTN Mapper only supports ChirpStackV3. V4 support still needs to be added. Please consider [supporting the TTN Mapper project](https://docs.ttnmapper.org/support-project.html) to make this happen." %}
+> TTN Mapper only supports ChirpStackV3. V4 support still needs to be added. Please consider [supporting the TTN Mapper project](https://docs.ttnmapper.org/support-project.html) to make this happen.
 
 The HTTP Integration allows you to create a webhook for uploading data to TTN Mapper. 
 
