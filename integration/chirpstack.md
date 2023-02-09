@@ -1,3 +1,8 @@
+
+
+> TTN Mapper only supports ChirpStackV3. V4 support still needs to be added. Please consider [supporting the TTN Mapper project](https://docs.ttnmapper.org/support-project.html) to make this happen.
+
+
 # ChirpStack integration
 
 The HTTP Integration allows you to create a webhook for uploading data to TTN Mapper. 
@@ -46,7 +51,7 @@ In order to verify whether the integration has been configured correctly, go to 
 
 > TTN Mapper's support for Chirpstack is still a work in progress and therefore not all maps will show the collected mapping data. Using the per-device raw data map and csv is the most reliable way to make sure your data is accepted into the TTN Mapper database.
 
-For troubleshooting please post your question in the #ttn-mapper channel on Slack.
+For troubleshooting please post your question in the #ttn-mapper Slack channel on https://thethingsnetwork.slack.com/.
 
 ## Experiments
 
