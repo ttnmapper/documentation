@@ -1,9 +1,9 @@
 # Support the TTN Mapper / CoverageMap project
 
 > **Current Funding**
-> * Patreon: 3.5%
-> * Ad revenue: 0.5%
-> * Loss: 96%
+> * Patreon: 50%
+> * Ad revenue: 5%
+> * Loss: 45%
 
 The server hosting costs for the mapping system is a substantial amount each month. 
 The project's future can only be guaranteed if these hosting costs are covered.
