@@ -1,13 +1,12 @@
 # ChirpStack integration
 
-> TTN Mapper only supports ChirpStackV3. V4 support still needs to be added. Please consider [supporting the TTN Mapper project](https://docs.ttnmapper.org/support-project.html) to make this happen.
-
 The HTTP Integration allows you to create a webhook for uploading data to TTN Mapper. 
 
 The goal of TTN Mapper is to provide a map of the actual coverage of the LoraWAN gateways. Contributors to TTN Mapper measure the performance of gateways in their vicinity and upload this information to the TTN Mapper website. Here the information is aggregated and shared with the TTN community.
 
 Go to https://ttnmapper.org for the global coverage map.
 
+> If you have a ChirpStack V4 server that has roaming set up with Helium and/or ThingsIX, mapping with your device registered in ChirpStack will also map the coverage of Helium or ThingsIX gateways that receives your device.
 
 ## Prerequisites
 
@@ -25,11 +24,20 @@ If you are developing your own GPS enabled LoRa device please check the followin
 
 ## Create the integration
 
+
+### ChirpStack V3
 On the Chirpstack-UI, open your application and then click on the *Integrations* tab on top. Then click on HTTP. In the configuration page for the integration fill in the following:
 
 * **Payload marshaler**: Select `JSON`
 * **Headers**: See [Headers](#headers)
 * **Endpoint**: Add `https://integrations.ttnmapper.org/chirp/v3/events`
+
+### ChirpStack V4
+In the ChirpStack web interface, choose applications, and then click on the application you are mappign coverage with. Go to the Integrations tab, and click on + under HTTP to add the HTTP integration.
+
+* **Payload encoding**: JSON or Protobuf - the Mapper supports both formats.
+* **Event endpoint URL(s)**: `https://integrations.ttnmapper.org/chirp/v4/events/` - multiple URLs can be added, separated by a comma.
+* **Headers**: See [Headers](#headers)
 
 ### Headers
 
